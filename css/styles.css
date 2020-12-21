@@ -18,21 +18,22 @@ h1 {
 
 h2 {
   color: #66BFBF;
-  padding: 0;
+  margin: 0;
+  padding: 20px 0;
   font-size: 2.5rem;
 }
 
 h3 {
   color: #11999e;
   margin: 0;
-  padding: 0px 0px 0px 10px;
+  padding: 0px 0px 10px 0px;
   font-size: 2rem;
 }
 
 h4 {
   color: #11999e;
   margin: 0;
-  padding: 10px 0px 0px 10px;
+  padding: 10px 0px 10px 0px;
   font-size: 1.5rem;
 }
 
@@ -52,6 +53,11 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   margin: 0;
+}
+
+table {
+  padding: 10px 20px;
+  ;
 }
 
 /* nav elements*/
@@ -94,7 +100,6 @@ nav a:hover {
   padding: 0;
 }
 
-
 /* Body Styling */
 
 .heading-style {
@@ -117,17 +122,11 @@ nav a:hover {
   font-size: 1.5rem;
   padding: 0;
   margin: 0;
-
 }
 
 .middle-container {
-
   margin: 0;
   position: relative;
-}
-
-.middle-container img {
-  height: 340px
 }
 
 .contact-container {
@@ -135,53 +134,19 @@ nav a:hover {
   padding: 10px;
 }
 
+.bottom-cushion {
+  padding-bottom: 20px;
+}
 
-.bottom-container {
+.card-cushion {
+  padding: 2% 3%;
+}
+
+.custom-footer {
   background-color: #e4f9f5;
-  padding: 25px 20px 15px 20px;
-  margin: 0;
-  text-align: center;
-  height: 40px;
-
-}
-
-.skills h2 {
-  margin: 30px 0 0 0;
-}
-
-.skill-row {
-  width: 50%;
-  line-height: 1.5;
-  margin: 50px auto 100px auto;
-  text-align: left;
-}
-
-.code-img {
-  float: left;
-  width: 60%;
-  margin-right: 50px;
-}
-
-.education-list ul {
-  list-style: none;
-  text-align: left;
-  width: 50%;
-  padding: 20px 0 0 30%;
-  line-height: 2;
-}
-
-.education-list h3 {
-  text-align: left;
-  width: 50%;
-  padding: 30px 0 0 30%;
 }
 
 /*text decoration and styling*/
-
-.no-bullets {
-  padding: 0;
-  text-decoration: none;
-}
 
 .copyright {
   color: #000000;
@@ -190,33 +155,41 @@ nav a:hover {
   ;
 }
 
-/* button */
-.btn {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  color: #FFFFFF;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 100;
-  padding: 16px;
-  background-color: #11999E;
-  -webkit-box-shadow: 1px 1px 20px 0 #000000;
-  -moz-box-shadow: 1px 1px 20px 0 #000000;
-  box-shadow: 1px 1px 20px 0 #000000;
-  text-shadow: 1px 1px 20px #000000;
-  border: solid #FFFFFF 1px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
+.no-bullets {
+  list-style: none;
+}
+
+/* about-me Profile CSS */
+
+.portfolio {
+  padding: 6%;
   text-align: center;
 }
 
-.btn:hover {
-  background: blanchedalmond;
-  border: solid #FFFFFF 1px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  text-decoration: none;
+.bio-info {
+  padding: 5%;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px #b0b3b7;
+}
+
+.name {
+  font-family: 'Charmonman', cursive;
+  font-weight: 600;
+}
+
+.bio-image {
+  text-align: center;
+}
+
+.bio-image img {
+  border-radius: 50%;
+}
+
+.bio-content {
+  text-align: left;
+}
+
+.bio-content p {
+  font-weight: 600;
+  font-size: 30px;
 }

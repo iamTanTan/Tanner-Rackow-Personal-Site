@@ -2,46 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
     <title>Tanner Rackow</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
         rel="stylesheet">
+
+    <!-- Bootstrap JS and jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-    <div>
+    <!-- Navigation Bar -->
+    <div class="container-fluid">
         <header>
-            <nav class="topnav">
-                <a href="index.html">Projects</a>
-                <a href="education.html">Education</a>
-                <a href="about-me.html">About Me</a>
 
-                <div class="topnav-right">
-                    <a href="https://www.linkedin.com/in/tannerrackow"><img class="icon-size" src="images/LI-In-Bug.png"
-                            alt="LinkedIn"></a>
-                    <a href="https://github.com/iamTanTan"><img class="icon-size" src="images/GitHub-Mark-32px.png"
-                            alt="GitHub link"></a>
+            <nav class="navbar navbar-light navbar-expand-lg fixed-top"
+                style="background-color: #e4f9f5; color: rgb(71, 70, 70);">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: rgb(71, 70, 70);"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="education.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-me.html">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/tannerrackow"><img class="icon-size"
+                                    src="images/LI-In-Bug.png" alt="LinkedIn"></a>
+                        </li>
+                        <li class="nav-item">
+                            `<a class="nav-link" href="https://github.com/iamTanTan"><img class="icon-size"
+                                    src="images/GitHub-Mark-32px.png" alt="GitHub link"></a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
     </div>
 
-
-    <div class="top-container">
+    <!-- First Section -->
+    <div class="container-fluid top-container">
         <h1 class="heading-style">Hi. I'm Tanner.</h1>
         <h4>A Software Engineer.</h4>
         <img src="images/pancakes.svg" alt="pancakes">
         <h4>And A Pancake Enthusiast.</h4>
     </div>
 
-
+    <!-- Second Section -->
     <div class="middle-container">
         <div class="profile">
-            <img src="" alt="">
             <h2>Hello.</h2>
             <p>I'm a programmer by day and an avid pancake maker by night.
             </p>
@@ -49,45 +86,64 @@
         <hr>
 
         <h2 class="skills">My Skills.</h2>
-
-        <div class="skill-row">
-            <img class="code-img" src="images/code.png" alt="code">
-            <h4>Languages and Technologies</h4>
-            <ul class="no-bullets">
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>MATLAB</li>
-                <li>LTSpice</li>
-                <li>Quartus</li>
-            </ul>
+        <div class="container mt-5" style="overflow-x:auto;">
+            <table class="table center table-bordered table-sm">
+                <thead>
+                    <tr>
+                        <th scope="col">Technologies/Languages</th>
+                        <th scope="col">Skill Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Java</th>
+                        <td>Proficient</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">HTML/CSS</th>
+                        <td>Proficient</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">JavaScript</th>
+                        <td>Familiar</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Python</th>
+                        <td>Familiar</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">MATLAB</th>
+                        <td>Familiar</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">MongoDB</th>
+                        <td>Exposed to</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
-    <div class="">
-        <img class="" src="" alt="">
-        <div id="middle-container-projects">
-            <h3>Projects</h3>
-            <h4>Geodesic Dome : August 2019 - October 2019</h4><br>
-            <p>
-                Researched metal alloys and fabrication techniques utilizing CES EduPack software<br>
-                Designed a presentation and procured materials to complement the team’s fabricated dome<br>
-                Competed and placed in the top 10 in the National ASM Geodesic Dome Design Competition</p>
+    <div class="container text-md-left">
+        <h3>Projects</h3>
+        <h4>Geodesic Dome : August 2019 - October 2019</h4><br>
+        <div class="text-sm-left">
+            <p>Researched metal alloys and fabrication techniques utilizing CES EduPack software</p>
+            <p>Designed a presentation and procured materials to complement the team’s fabricated dome</p>
+            <p>Competed and placed in the top 10 in the National ASM Geodesic Dome Design Competition</p>
         </div>
     </div>
 
+    <!-- Third Section -->
     <hr>
-    <div class="contact-container">
-        <h2 class="contact-container">Get In Touch</h2>
-        <h3 class="contact-container">Feel free to reach out.</h3>
+    <div class="container bottom-cushion">
+        <h2>Get In Touch</h2>
         <p class="contact-container">Ask questions, inquire about pancakes, or reach out about opportunities.</p>
-        <a class="btn" href="mailto:tsrackow@gmail.com">CONTACT ME</a>
-    </div>
+        <a class="btn btn-primary btn-outline-white " href="mailto:tsrackow@gmail.com">CONTACT ME</a>
     </div>
 
-
-    <div class="bottom-container">
+    <!-- Footer -->
+    <div class="container-fluid custom-footer">
         <p class="copyright"> Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a>
             from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
         <p class="copyright">© 2020 Tanner Rackow. </p>
