@@ -1,38 +1,28 @@
 /* Basic Body Elements*/
 
-a {
-  color: rgb(71, 70, 70);
-}
-
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
   text-align: center;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   color: #11999e;
-  font-size: 5rem;
-  margin: 18px auto 12px auto;
+  margin: 0;
+  font-family: 'Merriweather', serif;
 }
 
 h2 {
   color: #66BFBF;
-  margin: 0;
   padding: 20px 0;
   font-size: 2.5rem;
 }
 
 h3 {
-  color: #11999e;
-  margin: 0;
   padding: 0px 0px 10px 0px;
   font-size: 2rem;
 }
 
 h4 {
-  color: #11999e;
-  margin: 0;
   padding: 10px 0px 10px 0px;
   font-size: 1.5rem;
 }
@@ -40,12 +30,7 @@ h4 {
 hr {
   background-position: center;
   border-top: 3px solid #11999e;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
   margin: 22px auto 10px auto;
-  padding: 0;
-
   width: 50%;
 }
 
@@ -57,21 +42,15 @@ p {
 
 table {
   padding: 10px 20px;
-  ;
 }
 
 /* nav elements*/
 
 nav {
   background-color: #e4f9f5;
+  color: rgb(71, 70, 70);
   height: 54px;
-  width: 100%;
   z-index: 1040;
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  top: 0px;
 }
 
 nav a {
@@ -85,13 +64,6 @@ nav a {
 
 nav a:hover {
   background-color: blanchedalmond;
-  color: black;
-}
-
-.topnav-right a {
-  float: right;
-  margin: 0;
-  padding: 15px 10px 5px 10px;
 }
 
 .icon-size {
@@ -100,14 +72,24 @@ nav a:hover {
   padding: 0;
 }
 
-/* Body Styling */
+/* Headings */
 
 .heading-style {
   font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+  margin: 18px auto 12px auto;
 }
 
-.top-container {
+/* Sections */
+
+.colored-section {
   background-color: #e4f9f5;
+  color: #11999e;
+}
+
+/* Top Container */
+
+.top-container {
   color: #11999e;
   margin: 54px 0 0 0;
   padding: 10px 0 30px 0;
@@ -124,11 +106,13 @@ nav a:hover {
   margin: 0;
 }
 
-.middle-container {
-  margin: 0;
-  position: relative;
+/* Projects */
+
+.project-spacing p{
+  padding: 5px 0;
 }
 
+/* Contact */
 .contact-container {
   margin: 10px;
   padding: 10px;
@@ -138,47 +122,32 @@ nav a:hover {
   padding-bottom: 20px;
 }
 
+/* Education */
+
 .card-cushion {
   padding: 2% 3%;
 }
 
+/* Footer */
+
 .custom-footer {
   background-color: #e4f9f5;
-}
-
-/*text decoration and styling*/
-
-.copyright {
   color: #000000;
   font-size: .75rem;
-  padding-bottom: 10px;
-  ;
-}
-
-.no-bullets {
-  list-style: none;
+  padding: 10px 0;
 }
 
 /* about-me Profile CSS */
 
 .portfolio {
   padding: 6%;
-  text-align: center;
 }
 
 .bio-info {
   padding: 5%;
+  padding-top: 80px;
   background: #fff;
   box-shadow: 0px 0px 4px 0px #b0b3b7;
-}
-
-.name {
-  font-family: 'Charmonman', cursive;
-  font-weight: 600;
-}
-
-.bio-image {
-  text-align: center;
 }
 
 .bio-image img {
@@ -187,9 +156,4 @@ nav a:hover {
 
 .bio-content {
   text-align: left;
-}
-
-.bio-content p {
-  font-weight: 600;
-  font-size: 30px;
 }
